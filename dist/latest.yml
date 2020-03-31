@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: nsis_test Setup 1.0.0.exe
+    sha512: LY1CZq8vgiR0RVUrZoJvTFhBmdJ0yOVyzpZE0Bw2UTGEvfI8wJ9aPlDeI0zPKQapSTMXZ4O9FfVqMQH07EbHgA==
+    size: 50089232
+path: nsis_test Setup 1.0.0.exe
+sha512: LY1CZq8vgiR0RVUrZoJvTFhBmdJ0yOVyzpZE0Bw2UTGEvfI8wJ9aPlDeI0zPKQapSTMXZ4O9FfVqMQH07EbHgA==
+releaseDate: '2020-03-31T04:43:01.168Z'

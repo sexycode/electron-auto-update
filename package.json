@@ -1,0 +1,54 @@
+{
+  "name": "nsis_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/sexycode/electron-auto-update.example.git"
+  },
+  "build": {
+    "appId": "conun_manager",
+    "win": {
+      "requestedExecutionLevel": "requireAdministrator",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": "x64"
+        }
+      ],
+      "icon": "build/icons/icon.ico"
+    },
+    "extraResources": [
+      {
+        "from": "./client-core/",
+        "to": "client-core",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerLanguages": "ko_KR",
+      "runAfterFinish": true,
+      "license": "doc/license.txt"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest",
+    "electron-updater": "latest",
+    "electron-log": "latest",
+    "http-server": "latest"
+  }
+}
